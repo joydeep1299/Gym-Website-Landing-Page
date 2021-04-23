@@ -1,0 +1,28 @@
+{
+  "name": "gym-website-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joydeep1299/Gym-Website-Landing-Page.git"
+  },
+  "author": "Joydeep Kar Deep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joydeep1299/Gym-Website-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/joydeep1299/Gym-Website-Landing-Page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
