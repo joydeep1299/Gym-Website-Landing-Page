@@ -60,12 +60,14 @@ a {
   background-attachment: fixed;
 }
 /* top menu bar */
+.topbar__container {
+  background-color: var(--color-header-bg);
+}
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: var(--color-header-bg);
 }
 
 /* logo */
@@ -87,10 +89,10 @@ a {
   position: absolute;
   top: 55px;
   left: 0px;
-  background-color: var(--color-primary);
   width: 100%;
   height: 360px;
   text-align: center;
+  background-color: var(--color-primary);
 }
 .topbar__item__list--hide {
   display: none;
@@ -165,17 +167,17 @@ a {
 .about__heading::after {
   content: "";
   position: absolute;
-  top: 19px;
-  right: 10px;
   width: 28%;
   height: 1px;
+  top: 19px;
+  right: 10px;
   background-color: var(--color-primary);
 }
 /* About us content */
 .about__content__text {
   grid-column: 2/12;
 }
-.about__contect__video {
+.about__content__video {
   width: 100%;
   grid-column: 2/12;
 }
@@ -207,10 +209,10 @@ a {
 .testimonial__heading::after {
   content: "";
   position: absolute;
-  top: 19px;
-  right: 10px;
   width: 10%;
   height: 1px;
+  top: 19px;
+  right: 10px;
   background-color: var(--color-primary);
 }
 /* testimonial content */
@@ -283,10 +285,10 @@ a {
 .offer__heading::after {
   content: "";
   position: absolute;
-  top: 19px;
-  right: 10px;
   width: 26%;
   height: 1px;
+  top: 19px;
+  right: 10px;
   background-color: var(--color-primary);
 }
 /* offer content */
@@ -331,7 +333,7 @@ a {
   color: white;
   background-color: var(--color-bg-secondary);
 }
-/* heaidng */
+/* gallery heaidng */
 .gallery__heading {
   font-size: 25px;
   position: relative;
@@ -373,12 +375,6 @@ a {
   color: white;
   background-color: var(--color-bg-primary);
 }
-/* membership content */
-.membership__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 /* Membership Plans Heading */
 .membership__heading {
   font-size: 25px;
@@ -405,6 +401,12 @@ a {
   background-color: var(--color-primary);
 }
 /* Membership Plans Content */
+/* membership content */
+.membership__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* Membership card */
 .membership__content__card {
   max-width: 400px;
@@ -470,7 +472,6 @@ a {
   left: 0px;
   opacity: 0.75;
   z-index: -9;
-  
 }
 
 /* contact title */
@@ -489,33 +490,33 @@ a {
   padding-bottom: 25px;
 }
 /* footer */
-.footer{
+.footer {
   background-color: var(--color-bg-secondary);
   color: white;
   grid-row-gap: 20px;
   padding: 40px 0px;
   font-family: var(--font--primary);
 }
-.about{
+.about {
   grid-column: 2/12;
 }
-.about h4{
+.about h4 {
   color: var(--color-primary);
 }
-.about p{
+.about p {
   padding: 5px 0 15px;
 }
-.address{
+.address {
   grid-column: 2/12;
 }
-.address h3{
+.address h3 {
   padding-bottom: 5px;
 }
-.address p{
+.address p {
   padding-bottom: 3px;
 }
 
-.socials i{
+.socials i {
   color: var(--color-primary);
   border: gray 1px solid;
   border-radius: 50%;
@@ -523,19 +524,261 @@ a {
   padding: 3px;
 }
 
-.timetable{
+.timetable {
   grid-column: 2/12;
   margin-top: 20px;
 }
-.timetable td:nth-of-type(1){
+.timetable td:nth-of-type(1) {
   padding-right: 20vw;
 }
 /* copyright */
-.copyright{
+.copyright {
   background-color: var(--color-primary);
-  text-align:center;
+  text-align: center;
   font-family: var(--font--primary);
   color: white;
   font-size: 13px;
   padding: 10px 0;
 }
+
+/* Tablet Screen : 650px */
+/* Header section */
+/* header background image */
+#header {
+  background-size: 150% 80%;
+}
+@media only screen and (min-width: 650px) {
+  /* welcome section */
+  .welcome__btn {
+    grid-column: 5/9;
+    margin: 0 15px;
+  }
+  /*  About Us section  */
+  /* about us heading */
+
+  .about__heading::before {
+    width: 35%;
+    left: 25px;
+  }
+  .about__heading::after {
+    width: 35%;
+    right: 25px;
+  }
+  /* Testimonials section*/
+
+  /* Testimonials heading */
+
+  .testimonial__heading::before {
+    width: 25%;
+    left: 25px;
+  }
+  .testimonial__heading::after {
+    width: 25%;
+    right: 25px;
+  }
+  /*  Offers section  */
+
+  /* offer section heading */
+
+  .offer__heading::before {
+    width: 33%;
+    left: 25px;
+  }
+  .offer__heading::after {
+    width: 33%;
+    right: 25px;
+  }
+  /* Gallery Section */
+
+  /* heaidng */
+  .gallery__heading {
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  .gallery__heading::before {
+    width: 33%;
+    left: 25px;
+  }
+  .gallery__heading::after {
+    width: 33%;
+    right: 25px;
+  }
+  /* Membership Plans Section  */
+
+  /* Membership Plans Heading */
+  .membership__heading::before {
+    width: 26%;
+    left: 25px;
+  }
+  .membership__heading::after {
+    width: 26%;
+    right: 25px;
+  }
+  /* Footer */
+  /* Timeable */
+  .timetable td:nth-of-type(1) {
+    padding-right: 50vw;
+  }
+}
+/* laptop Screen Layout : 996px */
+@media only screen and (min-width: 996px) {
+  /* containers width fix */
+  .topbar,
+  .welcome,
+  .about__content,
+  .testimonial__content,
+  .offer__content {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .contact {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* all heaings */
+ /* about us heading */
+
+ .about__heading::before {
+  width: 44%;
+  left: 0;
+}
+.about__heading::after {
+  width: 44%;
+  right: 0;
+}
+/* Testimonials heading */
+.testimonial__heading::before {
+  width: 38%;
+  left: 0;
+}
+.testimonial__heading::after {
+  width: 38%;
+  right: 0;
+}
+/* offer section heading */
+.offer__heading::before {
+  width: 43%;
+  left: 0;
+}
+.offer__heading::after {
+  width: 43%;
+  right: 0;
+}
+/* gallery heading */
+.gallery__heading::before {
+  width: 43%;
+  left: 0;
+}
+.gallery__heading::after {
+  width: 43%;
+  right: 0;
+}
+/* Membership Plans heading */
+.membership__heading::before {
+  width: 40%;
+  left: 0;
+}
+.membership__heading::after {
+  width: 40%;
+  right: 0;
+}
+
+  /* Header section */
+  /* header background image */
+  #header {
+    background-size: cover;
+  }
+  /* top menu bar */
+  /* list item */
+  .topbar__item__list {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+  .topbar__item__list--hide {
+    display: flex;
+  }
+  .topbar__item__list li {
+    margin: 0;
+    margin-left: 20px;
+  }
+  .topbar__item__list a {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .topbar__item__list li:nth-of-type(1) a {
+    color: var(--color-primary);
+  }
+  /* menu icon */
+  .burger {
+    display: none;
+  }
+  /* welcome section */
+  .welcome {
+    padding: 100px 30px;
+  }
+  .welcome__title {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .welcome__text {
+    font-size: 20px;
+    padding: 60px 0;
+  }
+  .welcome__btn {
+    grid-column: 4/10;
+    flex-direction: row;
+  }
+  .welcome__btn  a{
+    margin-left: 15px;
+  }
+  /*  About Us section  */
+  /* about us content */
+  .about__content__video{
+    width: 320px;
+  }
+  .about__content__video:nth-of-type(1) {
+    grid-column: 1/4;
+  }
+  .about__content__video:nth-of-type(2) {
+    grid-column: 5/8;
+  }
+  .about__content__video:nth-of-type(3) {
+    grid-column: 9/12;
+  }
+  /* Offers section  */
+  /* offer content */
+/* cards */
+.offer__content__card {
+  max-width: 250px;
+}
+/* contact us */
+
+#contact-us::before {
+  background-size: cover;
+}
+  /* footer */
+  .about {
+    grid-column: 2/5;
+  }
+  .address {
+    grid-column: 6/9;
+  }
+  .timetable {
+    grid-column: 10/13; 
+    margin-top: 0; 
+  }
+  .timetable td:nth-of-type(1) {
+    padding-right: 2vw;
+    justify-self: end;
+  }
+}
+/* Extra large screens layout
+@media only screen and (min-width:1400px){
+  .welcome__btn {
+    margin :0 45px;
+  }
+} */
