@@ -3,7 +3,7 @@ const htmlmin = require('gulp-htmlmin'); // minify html
 const autoprefixer = require('gulp-autoprefixer'); // adds prefix to css
 const cleanCss = require('gulp-clean-css'); //minifiy css
 const imagemin = require('gulp-imagemin'); //minify images
-
+const replace = require('gulp-replace'); //replace string
 
 
 // Minify Html & Add to Dist
@@ -60,8 +60,17 @@ gulp.task('copyVideo',()=>{
     .pipe(gulp.dest('dist/assets/video/'))
 });
 
+//Repacle paths on root html file
+gulp.task('replaceString',()=> {
+  return gulp.src('./index.html')
+    .pipe(replace('./', './dist/'))
+    .pipe(gulp.dest('./'));
+});
+
+
+
 // default task
-gulp.task('default', gulp.series(['minifyHtml','minifyHtmlToRoot','autoPrefixer', 'minifyCss', 'imageMin','imageMinIcon','copy','copyVideo']));
+gulp.task('default', gulp.series(['minifyHtml','minifyHtmlToRoot','autoPrefixer', 'minifyCss', 'imageMin','imageMinIcon','copy','copyVideo','replaceString']));
 
 
 
