@@ -136,6 +136,9 @@ a {
 .welcome__btn a {
   margin-bottom: 15px;
 }
+.welcome__btn a:nth-of-type(2){
+  padding: 10px 30px;
+}
 
 /*  About Us section  */
 #about {
@@ -262,7 +265,7 @@ a {
   padding: 40px 0px;
   text-align: center;
   font-family: var(--font--primary);
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-secondary);
 }
 
 /* offer section heading */
@@ -331,7 +334,7 @@ a {
   text-align: center;
   font-family: var(--font--primary);
   color: white;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-primary);
 }
 /* gallery heaidng */
 .gallery__heading {
@@ -638,53 +641,81 @@ a {
     margin: 0 auto;
   }
   /* all heaings */
- /* about us heading */
+  /* about us heading */
 
- .about__heading::before {
-  width: 44%;
-  left: 0;
-}
-.about__heading::after {
-  width: 44%;
-  right: 0;
-}
-/* Testimonials heading */
-.testimonial__heading::before {
-  width: 38%;
-  left: 0;
-}
-.testimonial__heading::after {
-  width: 38%;
-  right: 0;
-}
-/* offer section heading */
-.offer__heading::before {
-  width: 43%;
-  left: 0;
-}
-.offer__heading::after {
-  width: 43%;
-  right: 0;
-}
-/* gallery heading */
-.gallery__heading::before {
-  width: 43%;
-  left: 0;
-}
-.gallery__heading::after {
-  width: 43%;
-  right: 0;
-}
-/* Membership Plans heading */
-.membership__heading::before {
-  width: 40%;
-  left: 0;
-}
-.membership__heading::after {
-  width: 40%;
-  right: 0;
-}
+  .about__heading::before {
+    width: 44%;
+    left: 0;
+  }
+  .about__heading::after {
+    width: 44%;
+    right: 0;
+  }
+  /* Testimonials heading */
+  .testimonial__heading::before {
+    width: 38%;
+    left: 0;
+  }
+  .testimonial__heading::after {
+    width: 38%;
+    right: 0;
+  }
+  /* offer section heading */
+  .offer__heading::before {
+    width: 43%;
+    left: 0;
+  }
+  .offer__heading::after {
+    width: 43%;
+    right: 0;
+  }
+  /* offer card */
+  .offer__content__card{
+    transition: all .5s;
+  }
+  .offer__content__card:hover{
+    transform: scale(1.07);
+  }
+  /* gallery heading */
+  .gallery__heading::before {
+    width: 43%;
+    left: 0;
+  }
+  .gallery__heading::after {
+    width: 43%;
+    right: 0;
+  }
+  /* Membership Plans heading */
+  .membership__heading::before {
+    width: 40%;
+    left: 0;
+  }
+  .membership__heading::after {
+    width: 40%;
+    right: 0;
+  }
+  /* cards */
+  .membership__content__card {
+    transition: transform 0.5s;
+  }
+  .membership__content__card:hover {
+    transform: scale(1.07);
+  }
+  /* buttons */
+  .membership__content a {
+    transition: all 0.25s;
+  }
 
+  .membership__content__card:nth-of-type(1) a:hover,
+  .membership__content__card:nth-of-type(3) a:hover {
+    color: white;
+    background-color: var(--color-primary);
+  }
+
+  .membership__content__card:nth-of-type(2) a:hover {
+    color: var(--color-primary);
+    background-color: transparent;
+  }
   /* Header section */
   /* header background image */
   #header {
@@ -709,6 +740,9 @@ a {
     font-weight: 400;
     font-size: 18px;
   }
+  .topbar__item__list a:hover{
+    color: #db3259cc;
+  }
   .topbar__item__list li:nth-of-type(1) a {
     color: var(--color-primary);
   }
@@ -732,12 +766,12 @@ a {
     grid-column: 4/10;
     flex-direction: row;
   }
-  .welcome__btn  a{
+  .welcome__btn a {
     margin-left: 15px;
   }
   /*  About Us section  */
   /* about us content */
-  .about__content__video{
+  .about__content__video {
     width: 320px;
   }
   .about__content__video:nth-of-type(1) {
@@ -751,15 +785,15 @@ a {
   }
   /* Offers section  */
   /* offer content */
-/* cards */
-.offer__content__card {
-  max-width: 250px;
-}
-/* contact us */
+  /* cards */
+  .offer__content__card {
+    max-width: 250px;
+  }
+  /* contact us */
 
-#contact-us::before {
-  background-size: cover;
-}
+  #contact-us::before {
+    background-size: cover;
+  }
   /* footer */
   .about {
     grid-column: 2/5;
@@ -768,8 +802,8 @@ a {
     grid-column: 6/9;
   }
   .timetable {
-    grid-column: 10/13; 
-    margin-top: 0; 
+    grid-column: 10/13;
+    margin-top: 0;
   }
   .timetable td:nth-of-type(1) {
     padding-right: 2vw;
